@@ -1,8 +1,11 @@
+import math 
+
 def bank (x,y):
     S = x;
     for x in range(0,y):
-        S= S + (x/10)
-    print("Итоговый доход за весь срок: " + str(S))
+        S += S *0.10
+    print("Итоговый доход за весь срок: " + str(round(S, 2)))
+
 try:
     x = float(input("Введите размер вклада: "))
 except ValueError: 
@@ -12,4 +15,4 @@ try:
 except ValueError: 
     print("Это не число.")
     
-bank(1000,5)
+bank(x,y)
