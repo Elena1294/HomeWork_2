@@ -9,5 +9,6 @@ def is_divided(n):
         else:
             print(i)
 
+
 n = int(input("Введите число: "))
 is_divided(n)
